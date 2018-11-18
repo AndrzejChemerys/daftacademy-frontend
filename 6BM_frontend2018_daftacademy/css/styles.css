@@ -1,0 +1,148 @@
+/* ======================
+Styles for 6BM Website.
+Author: Andrii Chemerys.
+Warsaw, 18.11.2018. 
+====================== */
+
+/* ======================
+    Main styles
+====================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.content-section {
+    background-color: rgb(228, 194, 194);
+    border: 1px dashed rgb(170, 196, 166);
+    overflow: hidden;
+    height: 100vh;
+    margin-left: 20vw;
+}
+
+.content-section:nth-child(even)  {
+    background-color: rgb(204, 208, 231);
+}
+
+.content-section__header {
+    top: 0;
+    left: 0;
+    color: #ef008e;
+    text-align: right;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 3.8px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ======================
+    Header styles 
+====================== */
+
+.page-header {
+    top: 0;
+    left: 0;
+    background-color: rgb(149, 220, 233);
+    width: 20vw;
+    position: fixed;
+}
+
+.page-navigation__items a {
+    color: #ef008e;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 6.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* ======================
+    Home page styles
+====================== */
+
+.screen-reader-only {
+    display: none;
+}
+
+.band-members__item {
+    transform: translate(50%, 50%);
+}
+
+.band-members__item {
+    border: 1px dashed rgb(109, 107, 240);
+    background-color: rgb(151, 142, 142);
+    float: left;
+}
+
+.band-members__image {
+    width: 100%;
+}
+
+/* ======================
+    About page styles 
+====================== */
+
+.about-section img {
+    margin: 5% auto auto 25%;
+    width: 70%;
+}
+
+.about-section__desc {
+    background-color: #aed;
+    width: 40%;
+}
+
+/* ======================
+    Concerts page styles 
+====================== */
+
+.concerts__item {
+    float: left;
+    margin: 10px;
+}
+
+.concerts__image {
+    width: 20vw;
+}
+
+/* ======================
+    Video page styles 
+====================== */
+
+/* ======================
+    Photo page styles 
+====================== */
+
+.gallery__item {
+    width: 26vw;
+    float: left;
+}
+
+.gallery__item img {
+    height: 25vh;
+}
+
+/* ======================
+    Contact page styles
+====================== */
+
+/* ======================
+    Footer page styles 
+====================== */
+
+.page-footer {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgb(177, 212, 183);
+    
+}
