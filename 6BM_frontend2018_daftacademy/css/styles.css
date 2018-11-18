@@ -16,13 +16,12 @@ Warsaw, 18.11.2018.
 
 .content-section {
     background-color: rgb(228, 194, 194);
-    border: 1px dashed rgb(170, 196, 166);
     overflow: hidden;
     height: 100vh;
     margin-left: 20vw;
 }
 
-.content-section:nth-child(even)  {
+.content-section:nth-child(even) {
     background-color: rgb(204, 208, 231);
 }
 
@@ -79,7 +78,6 @@ ul {
 
 .band-members__item {
     border: 1px dashed rgb(109, 107, 240);
-    background-color: rgb(151, 142, 142);
     float: left;
 }
 
@@ -144,5 +142,4 @@ ul {
     left: 0;
     position: fixed;
     background-color: rgb(177, 212, 183);
-    
 }
