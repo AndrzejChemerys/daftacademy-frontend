@@ -35,7 +35,7 @@
         </nav>
     </header>
 
-    <main class="main-content">
+    <main class="page-content">
         <section id="home" class="content-section">
             <h2 class="content-section__header screen-reader-only">Home</h2>
             <ul class="band-members">
@@ -64,10 +64,10 @@
 
         <section id="about" class="content-section about-section">
             <h2 class="content-section__header">About</h2>
-            <img src="./img/band01.jpg" alt="Image of band members standing at the construction site" />
+            <img src="./img/band01.jpg" alt="Image of band members standing at the construction site" class="about-section__photo" />
             <div class="about-section__desc">
                 <h3 class="about-section__desc-header">Straight from Lublin</h3>
-                <p class="about-section__desc-header">
+                <p class="about-section__desc-paragraph">
                     6BM is a young band which has it's origins in the city of Lublin, playing music described as
                     electrorock.<br />
                     Band members aim to convey emotions, reflexion but also hope.<br /><br />
@@ -119,8 +119,10 @@
 
         <section id="video" class="content-section">
             <h2 class="content-section__header">Video</h2>
-            <iframe width="853" height="480" src="https://www.youtube.com/embed/AstRXh-vKNI?rel=0" frameborder="0"
-                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="video-clip">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/AstRXh-vKNI?rel=0" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
         </section> <!-- End of video page content -->
 
         <section id="photos" class="content-section">
@@ -173,7 +175,7 @@
                     <input class="form__input" type="text" name="topic" id="topic" required />
                 </div>
                 <div class="form__field">
-                    <button class="button" type="submit">Contact us!</button>
+                    <button class="button-2" type="submit">Contact us!</button>
                 </div>
             </form>
         </section><!-- End of contact page content -->
@@ -182,16 +184,16 @@
     <footer class="page-footer">
         <h2 class="screen-reader-only">Social media links</h2>
         <ul class="social-links">
-            <li class="social-links__item">
+            <li class="social-links__item fb-ico">
                 <a class="social-links__link" href="http://facebook.com/">Facebook</a>
             </li>
-            <li class="social-links__item">
+            <li class="social-links__item in-ico">
                 <a class="social-links__link" href="http://instagram.com/">Instagram</a>
             </li>
-            <li class="social-links__item">
+            <li class="social-links__item ls-ico">
                 <a class="social-links__link" href="http://last.fm/">Last.fm</a>
             </li>
-            <li class="social-links__item">
+            <li class="social-links__item yt-ico">
                 <a class="social-links__link" href="http://youtube.com/">Youtube</a>
             </li>
         </ul>
