@@ -1,11 +1,11 @@
 /* ======================
 Styles for 6BM Website.
 Author: Andrii Chemerys.
-Warsaw, 18.11.2018. 
+Warsaw, 2.12.2018. 
 ====================== */
 
 /* ======================
-    Main styles
+MAIN STYLES
 ====================== */
 
 * {
@@ -16,13 +16,16 @@ body {
     margin: 0;
     padding: 0;
     background-color: #2c0d32;
-    background: url(../img/background.svg); background-size: cover;
+    background: url(../img/background.svg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     margin: 0;
 }
 
@@ -30,34 +33,6 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.page-content {
-    margin-left: 220px;
-    padding: 0 10%;
-    /* text-align: right; */
-}
-
-.content-section {
-    min-height: 100vh;
-}
-
-.content-section__header {
-    top: 0;
-    left: 0;
-    color: #ef008e;
-    text-align: right;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 28px;
-    letter-spacing: 3.8px;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding-top: 5%;
-}
-
-ul {
-    list-style: none;
 }
 
 .screen-reader-only {
@@ -70,302 +45,291 @@ ul {
 }
 
 /* ======================
-    Header styles 
+TYPOGRAFIA
 ====================== */
 
-.page-header {
-    top: 50px;
-    left: 50px;
-    position: fixed;
-}
-
-.page-navigation {
-    padding-top: 20px;
-}
-
-
-.page-navigation__items a {
-    color: #ef008e;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
+body {
+    color: rgba(204, 200, 255, 0.8);
+    font-family: 'Open Sans', sans-serif;
     font-size: 13px;
-    letter-spacing: 6.5px;
+    font-weight: normal;
+}
+
+a {
+    color: #EF008E;
     text-decoration: none;
-    text-transform: uppercase;
-    line-height: 30px;
 }
 
 /* ======================
-    Home page styles
+PRZYCISKI
 ====================== */
-
-.band-members {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-.band-members__name {
-    color: #ccc8ff;
-    font-family: "Open sans", sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    letter-spacing: 3.8px;
-    text-transform: uppercase;
-    text-align: left;
-}
-
-.band-members__desc {
-    color: #ccc8ff;
-    font-family: "Open sans", sans-serif;
-    font-size: 13px;
-    letter-spacing: 3.5px;
-    text-align: left;
-    opacity: 0.5;
-}
-
-
-/* ======================
-    About page styles 
-====================== */
-
-.about-section {
-    position: relative;
-}
-
-.about-section__photo {
-    border-top: 3px #ff0087 solid;
-    width: 60%;
-    position: absolute;
-    top: 15%;
-    right: 0;
-}
-
-.about-section__desc {
-    background-color: #2a002e;
-    width: 33%;
-    border-bottom: 3px #ff0087 solid;
-    padding: 30px;
-    position: absolute;
-    top: 40%;
-    left: 15%;
-}
-
-.about-section__desc-header {
-    color: #ccc8ff;
-    font-family: "Open sans", sans-serif;
-    font-size: 15px;
-    letter-spacing: 3.8px;
-    text-transform: uppercase;
-    text-align: left;
-    margin-bottom: 30px;
-}
-
-.about-section__desc-paragraph {
-    color: #ccc8ff;
-    font-family: "Open sans", sans-serif;
-    font-size: 13px;
-    letter-spacing: 1.5px;
-    opacity: 0.8;
-    text-align: left;
-    line-height: 16px;
-}
-
-/* ======================
-    Concerts page styles 
-====================== */
-
-.concerts {
-    width: 90%;
-    padding-left:10%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    
-}
-
-.concerts__image {
-    width: 100%;
-    border-bottom: 3px #ff0087 solid;
-}
-
-.concerts__item {
-    padding: 20px;
-    margin-top: 15px;
-    width: 50%;
-    position: relative;
-}
-
-.concerts__info {
-    padding-top: 10px;
-}
-
-.concerts__date {
-    font-family: "Open sans", sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    color: #ccc8ff;
-    letter-spacing: 3.8px;
-    text-transform: uppercase;
-    line-height: 20px;
-}
-
-.concerts__location {
-    font-family: "Open sans", sans-serif;
-    font-size: 13px;
-    color: #ccc8ff;
-    letter-spacing: 3.5px;
-    opacity: 0.8;
-}
 
 .button {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    padding: 10px;
-    background: rgb(204, 200, 255, 0.1);
+    padding: 7px 15px;
+    border-radius: 3px;
+    background-color: rgba(204, 200, 255, 0.1);
+    border-color: rgba(204, 200, 255, 0.1);
+
+    color: rgba(204, 200, 255, 0.8);
     font-size: 12px;
-    font-weight: 400;
-    color: rgb(204, 200, 255, 0.8);
-    letter-spacing: 1.6px;
+    font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 1.6px;
+    cursor: pointer;
 }
 
 /* ======================
-    Video page styles 
+FORMULARZE
 ====================== */
 
-.video-clip {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    height: 100%;
-    padding-top: 10%;
+.form__field {
+    margin-bottom: 10px;
 }
 
-/* ======================
-    Photo page styles 
-====================== */
-
-.gallery {
-    padding-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-    max-height: 100vh;
-}
-
-.gallery__item {
-    padding: 10px;
-}
-
-.gallery__item img {
-    border-top: 3px #ff0087 solid;
-    height: 23vh;
-}
-
-/* ======================
-    Contact page styles
-====================== */
-
-.gallery__image-2 {
-    padding-top: 10%;
-}
-
-.contact-page {
-    position: relative;
-}
-
-.contact-info {
-    position: absolute;
-    top: 38%;
-    left: 45%;
-}
-
-.form {
-    padding-top: 50px;
-}
-
-.contact-info, .form__field {
-    font-family: "Open sans", sans-serif;
-    font-size: 13px;
-    color: #ccc8ff;
-    letter-spacing: 1.5px;
-    opacity: 0.8;
-    font-style: normal;
+.form__label {
+    display: block;
+    margin-bottom: 9px;
 }
 
 .form__input {
     display: block;
+    height: 35px;
     width: 300px;
-    margin: 10px 0;
+    padding: 10px 15px;
     border: none;
-    outline: none;
     border-radius: 4px;
-    padding: 10px;
-    background: rgb(204, 200, 255, 0.1);
+    background-color: rgba(219, 216, 251, 0.1);
 }
 
-.button-2 {
-    margin-top: 26px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    padding: 10px;
-    background: rgb(204, 200, 255, 0.1);
-    font-size: 12px;
-    color: rgb(204, 200, 255, 0.8);
-    letter-spacing: 1.6px;
+/* ======================
+GŁÓWNY LAYOUT STRONY
+====================== */
+
+.page-header {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+}
+
+.page-content {
+    margin-left: 220px;
+    padding: 0 10%;
+}
+
+/* ======================
+NAWIGACJA
+====================== */
+
+.page-navigation__items {
+    padding-top: 15px;
+}
+
+.page-navitagion__item a {
+    color: rgba(239, 0, 142, 0.6);
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 6.7px;
+}
+
+/* ======================
+LINKI DO SOCIAL MEDIA
+====================== */
+
+.social-links__item+.social-links__item {
+    margin-top: 15px;
+}
+
+.social-links__item img {
+    width: 20px;
+    height: 20px;
+}
+
+/* ================================
+STYLE WSPÓLNE DLA WSZYSTKICH SEKCJI
+================================ */
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100vh;
+}
+
+.content-section__header {
+    margin-bottom: 60px;
+    color: #EF008E;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4.5px;
     text-transform: uppercase;
 }
 
-
+.content-section__body {
+    flex-grow: 1;
+}
 
 /* ======================
-    Footer page styles 
+SEKCJA "HOME"
 ====================== */
 
-.page-footer {
-    bottom: 50px;
-    left: 50px;
-    position: fixed;
+.content-section.home-section {
+    align-items: center;
 }
 
-.social-links__item {
-    height: 45px;
+.band-members {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.fb-ico {
-    padding: 10px 0;
-    background: url(../img/fb.svg) no-repeat;
-    background-size: 25px 25px;
-    opacity: 0.8;
-}   
+/*
+Tymczasowo ukrywamy tę sekcję
+*/
+.band-members__name,
+.band-members__desc {
+    display: none;
+}
 
-.in-ico {
-    padding: 10px 0;
-    background: url(../img/insta.svg) no-repeat;
-    background-size: 25px 25px;
-    opacity: 0.8;
-}  
+/* ======================
+SEKCJA "ABOUT"
+====================== */
 
-.ls-ico {
-    padding: 10px 0;
-    background: url(../img/last.svg) no-repeat;
-    background-size: 25px 25px;
-    opacity: 0.8;
-} 
+.about {
+    position: relative;
+    margin-left: 290px;
+    margin-bottom: 115px;
+}
 
-.yt-ico {
-    padding: 10px 0;
-    background: url(../img/yout.svg) no-repeat;
-    background-size: 25px 25px;
-    opacity: 0.8;
-} 
+.about__image {
+    max-width: 100%;
+    border-top: 3px solid #EF008E;
+}
+
+.about__desc-header {
+    margin-bottom: 30px;
+    color: #CCC8FF;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about__desc {
+    position: absolute;
+    left: -290px;
+    bottom: -115px;
+    width: 380px;
+    padding: 30px;
+    background-color: #25072e;
+    border-bottom: 3px solid #EF008E;
+}
+
+/* ======================
+SEKCJA "CONCERTS"
+====================== */
+
+.concerts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.concerts__item {
+    flex-basis: 50%;
+    padding: 0 0 45px 55px;
+}
+
+.concerts__image {
+    max-width: 100%;
+    border-bottom: 3px solid #EF008E;
+}
+
+.concerts__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.concerts__info-base {
+    flex-grow: 1;
+}
+
+.concerts__date {
+    margin: 0;
+    color: #CCC8FF;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3.8px;
+}
+
+.concerts__location {
+    margin: 0;
+    letter-spacing: 3.8px;
+}
+
+/* ======================
+SEKCJA "VIDEO"
+====================== */
+
+.embedded-video {
+    border-top: 3px solid #EF008E;
+}
+
+/* ======================
+SEKCJA "PHOTOS"
+====================== */
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.gallery__item {
+    flex-basis: 33.3%;
+    padding: 0 0 20px 20px;
+}
+
+.gallery__image {
+    max-width: 100%;
+    border-top: 3px solid #EF008E;
+}
+
+/* ======================
+SEKCJA "CONTACT"
+====================== */
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact__image img {
+    max-width: 100%;
+}
+
+.contact__address {
+    padding: 70px;
+    font-style: normal;
+}
+
+.contact__form {
+    flex-basis: 50%;
+    padding-top: 40px;
+}
+
+.contact__form .button {
+    margin-top: 20px;
+}
