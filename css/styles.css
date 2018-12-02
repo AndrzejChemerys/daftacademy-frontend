@@ -187,6 +187,7 @@ SEKCJA "HOME"
     display: flex;
     flex-direction: row;
     align-items: center;
+    min-width: 375px;
 }
 
 /*
@@ -195,6 +196,10 @@ Tymczasowo ukrywamy tę sekcję
 .band-members__name,
 .band-members__desc {
     display: none;
+}
+
+.band-members__item img {
+    width: 100%;
 }
 
 /* ======================
@@ -210,6 +215,7 @@ SEKCJA "ABOUT"
 .about__image {
     max-width: 100%;
     border-top: 3px solid #EF008E;
+    min-width: 375px;
 }
 
 .about__desc-header {
@@ -284,6 +290,23 @@ SEKCJA "VIDEO"
     border-top: 3px solid #EF008E;
 }
 
+/* 
+.video-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+*/
+
 /* ======================
 SEKCJA "PHOTOS"
 ====================== */
@@ -303,6 +326,7 @@ SEKCJA "PHOTOS"
 .gallery__image {
     max-width: 100%;
     border-top: 3px solid #EF008E;
+    min-width: 130px;
 }
 
 /* ======================
@@ -332,4 +356,124 @@ SEKCJA "CONTACT"
 
 .contact__form .button {
     margin-top: 20px;
+}
+
+/* ======================
+=========================
+MEDIA QUERIES
+=========================
+====================== */
+
+/* ======================
+Laptop
+====================== */
+
+@media (max-width: 1024px) {
+    .about__desc {
+        position: static;
+        width: 375px;
+        margin-top: 10px;
+    }
+
+    .contact__address {
+        padding: 20px 150px 20px 0;
+    }
+
+    .contact__form {
+        padding-top: 0;
+    }
+
+    .video-container {
+        display: none;
+    }
+
+}
+
+/* ======================
+Tablet
+====================== */
+
+@media (max-width: 768px) {
+
+    .page-content {
+        margin: auto;
+    }
+
+    .content-section {
+        align-items: center;
+    }
+
+    .page-header {
+        position: static;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .about {
+        margin-left: 0;
+    }
+    
+    .about__desc {
+        margin: auto;
+    }
+
+    .concerts__item {
+        padding: 0;
+    }
+
+    .gallery__item {
+        min-width: 300px;
+    }
+
+    .page-footer {
+        position: static;
+    }
+
+
+}
+
+/* ======================
+Mobile phone
+====================== */
+
+@media (max-width: 375px) {
+    .body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-content {
+        padding: 0 2%;
+    }
+
+    .concerts {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .concerts__item {
+        margin-bottom: 15px;
+    }
+
+    .concerts__image {
+        padding: 0;
+    }
+
+    .gallery__item {
+        padding: 0 0 20px 0;
+    }
+    
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 375px;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        align-items: stretch;
+    }
 }
