@@ -427,9 +427,15 @@ Tablet
 
     .page-footer {
         position: static;
+        margin-bottom: 20px;
     }
 
-
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
 }
 
 /* ======================
@@ -468,12 +474,5 @@ Mobile phone
         flex-direction: column;
         flex-wrap: nowrap;
         width: 375px;
-    }
-
-    .social-links {
-        display: flex;
-        flex-direction: row;
-        align-content: space-between;
-        align-items: stretch;
     }
 }
