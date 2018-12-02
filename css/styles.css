@@ -365,6 +365,16 @@ MEDIA QUERIES
 ====================== */
 
 /* ======================
+Video breakdown point
+====================== */
+
+@media (max-width: 1366px) {
+    .video-container iframe {
+        width: 100%;
+    }
+}
+
+/* ======================
 Laptop
 ====================== */
 
@@ -383,10 +393,9 @@ Laptop
         padding-top: 0;
     }
 
-    .video-container {
+    /* .video-container {
         display: none;
-    }
-
+    } */
 }
 
 /* ======================
@@ -412,7 +421,7 @@ Tablet
     .about {
         margin-left: 0;
     }
-    
+
     .about__desc {
         margin: auto;
     }
@@ -468,7 +477,7 @@ Mobile phone
     .gallery__item {
         padding: 0 0 20px 0;
     }
-    
+
     .gallery {
         display: flex;
         flex-direction: column;
