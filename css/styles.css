@@ -45,7 +45,7 @@ ul {
 }
 
 /* ======================
-TYPOGRAFIA
+TYPOGRAPHY
 ====================== */
 
 body {
@@ -61,7 +61,7 @@ a {
 }
 
 /* ======================
-PRZYCISKI
+BUTTONS
 ====================== */
 
 .button {
@@ -79,7 +79,7 @@ PRZYCISKI
 }
 
 /* ======================
-FORMULARZE
+FORMS
 ====================== */
 
 .form__field {
@@ -102,7 +102,7 @@ FORMULARZE
 }
 
 /* ======================
-GŁÓWNY LAYOUT STRONY
+MAIN PAGE LAYOUT
 ====================== */
 
 .page-header {
@@ -123,7 +123,7 @@ GŁÓWNY LAYOUT STRONY
 }
 
 /* ======================
-NAWIGACJA
+NAVIGATION
 ====================== */
 
 .page-navigation__items {
@@ -138,7 +138,7 @@ NAWIGACJA
 }
 
 /* ======================
-LINKI DO SOCIAL MEDIA
+LINKS FOR SOCIAL MEDIA
 ====================== */
 
 .social-links__item+.social-links__item {
@@ -151,7 +151,7 @@ LINKI DO SOCIAL MEDIA
 }
 
 /* ================================
-STYLE WSPÓLNE DLA WSZYSTKICH SEKCJI
+COMMON STYLES FOR ALL SECTIONS
 ================================ */
 
 .content-section {
@@ -176,7 +176,7 @@ STYLE WSPÓLNE DLA WSZYSTKICH SEKCJI
 }
 
 /* ======================
-SEKCJA "HOME"
+SECTION "HOME"
 ====================== */
 
 .content-section.home-section {
@@ -203,7 +203,7 @@ Tymczasowo ukrywamy tę sekcję
 }
 
 /* ======================
-SEKCJA "ABOUT"
+SECTION "ABOUT"
 ====================== */
 
 .about {
@@ -237,7 +237,7 @@ SEKCJA "ABOUT"
 }
 
 /* ======================
-SEKCJA "CONCERTS"
+SECTION "CONCERTS"
 ====================== */
 
 .concerts {
@@ -283,7 +283,7 @@ SEKCJA "CONCERTS"
 }
 
 /* ======================
-SEKCJA "VIDEO"
+SECTION "VIDEO"
 ====================== */
 
 .embedded-video {
@@ -308,7 +308,7 @@ SEKCJA "VIDEO"
 */
 
 /* ======================
-SEKCJA "PHOTOS"
+SECTION "PHOTOS"
 ====================== */
 
 .gallery {
@@ -330,7 +330,7 @@ SEKCJA "PHOTOS"
 }
 
 /* ======================
-SEKCJA "CONTACT"
+SECTION "CONTACT"
 ====================== */
 
 .contact {
