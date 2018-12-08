@@ -167,6 +167,8 @@ LINKS FOR SOCIAL MEDIA
     height: 20px;
 }
 
+
+
 /* ================================
 COMMON STYLES FOR ALL SECTIONS
 ================================ */
@@ -217,6 +219,8 @@ SECTION "HOME"
     width: 100%;
     opacity: .55;
 }
+
+/* animation */
 
 .band-members__item:hover > .band-members__name {
     opacity: 1;
