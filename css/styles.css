@@ -135,7 +135,24 @@ NAVIGATION
     line-height: 30px;
     text-transform: uppercase;
     letter-spacing: 6.7px;
+    transition: all 0.1s ease-in-out;
 }
+
+/* animation */
+
+.page-navitagion__item a:hover {
+    color: rgba(239, 0, 142, 1);
+}
+
+.page-navitagion__item a:focus {
+    color: rgba(239, 0, 142, 1);
+    outline: none;
+}
+
+.page-navitagion__item a:active {
+    color: rgba(239, 0, 142, 1);
+}
+
 
 /* ======================
 LINKS FOR SOCIAL MEDIA
@@ -190,16 +207,27 @@ SECTION "HOME"
     min-width: 375px;
 }
 
-/*
-Tymczasowo ukrywamy tę sekcję
-*/
 .band-members__name,
 .band-members__desc {
-    display: none;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
 }
 
 .band-members__item img {
     width: 100%;
+    opacity: .55;
+}
+
+.band-members__item:hover > .band-members__name {
+    opacity: 1;
+}
+
+.band-members__item:hover > .band-members__desc {
+    opacity: 1;
+}
+
+.band-members__item:hover > .band-members__image {
+    opacity: 1;
 }
 
 /* ======================
@@ -439,6 +467,7 @@ Tablet
     .band-members__desc {
         display: block;
         text-align: center;
+        opacity: 1;
     }
 
     .about {
