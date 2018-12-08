@@ -321,12 +321,19 @@ SECTION "PHOTOS"
 .gallery__item {
     flex-basis: 33.3%;
     padding: 0 0 20px 20px;
+    transition: all 0.4s ease-in-out;
 }
 
 .gallery__image {
     max-width: 100%;
     border-top: 3px solid #EF008E;
     min-width: 130px;
+}
+
+/* animation */
+
+.gallery__item:hover {
+    transform: scale(1.075);
 }
 
 /* ======================
@@ -396,6 +403,8 @@ Laptop
     /* .video-container {
         display: none;
     } */
+
+    
 }
 
 /* ======================
@@ -415,6 +424,20 @@ Tablet
     .page-header {
         position: static;
         margin-top: 50px;
+        text-align: center;
+    }
+
+    .band-members {
+        flex-direction: column;
+    }
+
+    .band-members__image {
+        margin: 50px 0 10px;
+    }
+
+    .band-members__name,
+    .band-members__desc {
+        display: block;
         text-align: center;
     }
 
