@@ -281,7 +281,7 @@ SECTION "CONCERTS"
 
 .concerts__item {
     flex-basis: 50%;
-    padding: 0 0 45px 55px;
+    padding: 0 0 40px 40px;
 }
 
 .concerts__image {
@@ -411,6 +411,9 @@ Video breakdown point
     .video-container iframe {
         width: 100%;
     }
+
+    
+
 }
 
 /* ======================
@@ -424,6 +427,19 @@ Laptop
         margin-top: 10px;
     }
 
+    .concerts {
+        display: block;
+        width: 100%;
+    }
+
+    .concerts__info {
+        padding: 10px 0  10px 0;
+    }
+
+    .concerts__item {
+        padding: 0;
+    }
+
     .contact__address {
         padding: 20px 150px 20px 0;
     }
@@ -431,6 +447,8 @@ Laptop
     .contact__form {
         padding-top: 0;
     }
+
+    
 
     /* .video-container {
         display: none;
