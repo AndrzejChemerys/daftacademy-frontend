@@ -131,7 +131,7 @@ NAVIGATION
 }
 
 .page-navitagion__item a {
-    color: rgba(239, 0, 142, 0.6);
+    color: rgba(239, 0, 142, 0.8);
     line-height: 30px;
     text-transform: uppercase;
     letter-spacing: 6.7px;
@@ -153,6 +153,14 @@ NAVIGATION
     color: rgba(239, 0, 142, 1);
 }
 
+.page-navitagion__item a:visited {
+    color: rgba(239, 0, 142, 0.6);
+}
+
+.page-navitagion__item a:disabled {
+    color: rgba(239, 0, 142, 0.4);
+}
+
 
 /* ======================
 LINKS FOR SOCIAL MEDIA
@@ -167,6 +175,24 @@ LINKS FOR SOCIAL MEDIA
     height: 20px;
 }
 
+/* animation */
+
+.social-links__item a {
+    opacity: 0.8;
+    transition: all 0.1s ease-in-out;
+}
+
+.social-links__item a:hover {
+    opacity: 1;
+}
+
+.social-links__item a:active {
+    opacity: 1;
+}
+
+.social-links__item a:visited {
+    opacity: 0.6;
+}
 
 
 /* ================================
@@ -213,6 +239,20 @@ SECTION "HOME"
 .band-members__desc {
     opacity: 0;
     transition: all 0.2s ease-in-out;
+}
+
+.band-members__name {
+    color: #ccc8ff;
+    font-size: 15px;
+    letter-spacing: 3.8px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.band-members__desc {
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    font-weight: normal;
 }
 
 .band-members__item img {
@@ -411,9 +451,6 @@ Video breakdown point
     .video-container iframe {
         width: 100%;
     }
-
-    
-
 }
 
 /* ======================
@@ -447,14 +484,6 @@ Laptop
     .contact__form {
         padding-top: 0;
     }
-
-    
-
-    /* .video-container {
-        display: none;
-    } */
-
-    
 }
 
 /* ======================
