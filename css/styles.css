@@ -1,7 +1,7 @@
 /* ======================
 Styles for 6BM Website.
 Author: Andrii Chemerys.
-Warsaw, 2.12.2018. 
+Warsaw, 9.12.2018. 
 ====================== */
 
 /* ======================
@@ -76,6 +76,36 @@ BUTTONS
     text-transform: uppercase;
     letter-spacing: 1.6px;
     cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+/* animation */
+
+.button:hover {
+    background-color: rgba(204, 200, 255, 0.2);
+    color: rgba(204, 200, 255, 1);
+}
+
+.button:active {
+    background-color: rgba(204, 200, 255, 0.2);
+    color: rgba(204, 200, 255, 1);
+}
+
+.button:visited {
+    background-color: rgba(204, 200, 255, 0.1);
+    color: rgba(204, 200, 255, 0.5);
+}
+
+.button:focus {
+    background-color: rgba(204, 200, 255, 0.2);
+    color: rgba(204, 200, 255, 1);
+    border-color: rgba(204, 200, 255, 0.8);
+    outline: none;
+}
+
+.button:disabled {
+    background-color: rgba(204, 200, 255, 0.1);
+    color: rgba(204, 200, 255, 0.5);
 }
 
 /* ======================
@@ -151,6 +181,7 @@ NAVIGATION
 
 .page-navitagion__item a:active {
     color: rgba(239, 0, 142, 1);
+    letter-spacing: 6.5px;
 }
 
 .page-navitagion__item a:visited {
@@ -194,6 +225,14 @@ LINKS FOR SOCIAL MEDIA
     opacity: 0.6;
 }
 
+.social-links__item a:focus {
+    opacity: 1;
+    outline: none;
+}
+
+.social-links__item a:disabled {
+    opacity: 0.4;
+}
 
 /* ================================
 COMMON STYLES FOR ALL SECTIONS
@@ -361,23 +400,6 @@ SECTION "VIDEO"
 .embedded-video {
     border-top: 3px solid #EF008E;
 }
-
-/* 
-.video-container {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-}
-
-.video-container iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-*/
 
 /* ======================
 SECTION "PHOTOS"
