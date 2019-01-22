@@ -18,26 +18,24 @@ https://andriichemerys.github.io/daftacademy_frontend4begginers/
 
 > Home Section screenshot
 
-![screenshot of the project home section](daftacademy_frontend4begginers/img/img_final_scrn/img-1.jpg)    <br/><br/>
+![screenshot of the project home section](https://github.com/AndriiChemerys/daftacademy_frontend4begginers/blob/master/img/img_final_scrn/img-1.jpg)    <br/><br/>
 
 > About Section screenshot
 
-![screenshot of the project about section](daftacademy_frontend4begginers/img/img_final_scrn/img-2.jpg)    <br/><br/>
+![screenshot of the project about section](https://github.com/AndriiChemerys/daftacademy_frontend4begginers/blob/master/img/img_final_scrn/img-2.jpg)    <br/><br/>
 
 > Concerts Section screenshot
 
-![screenshot of the project concerts section](daftacademy_frontend4begginers/img/img_final_scrn/img-3.jpg)    <br/><br/>
+![screenshot of the project concerts section](https://github.com/AndriiChemerys/daftacademy_frontend4begginers/blob/master/img/img_final_scrn/img-3.jpg)    <br/><br/>
 
 > Video Section screenshot
 
-![screenshot of the project video section](daftacademy_frontend4begginers/img/img_final_scrn/img-4.jpg)    <br/><br/>
+![screenshot of the project video section](https://github.com/AndriiChemerys/daftacademy_frontend4begginers/blob/master/img/img_final_scrn/img-4.jpg)    <br/><br/>
 
 > Photos Section screenshot
 
-![screenshot of the project photos section](daftacademy_frontend4begginers/img/img_final_scrn/img-5.jpg)    <br/><br/>
+![screenshot of the project photos section](https://github.com/AndriiChemerys/daftacademy_frontend4begginers/blob/master/img/img_final_scrn/img-5.jpg)    <br/><br/>
 
 > Contact Section screenshot
 
-![screenshot of the project contact section](daftacademy_frontend4begginers/img/img_final_scrn/img-6.jpg)    <br/><br/>
-
-
+![screenshot of the project contact section](https://github.com/AndriiChemerys/daftacademy_frontend4begginers/blob/master/img/img_final_scrn/img-6.jpg)    <br/><br/>
