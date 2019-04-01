@@ -6,6 +6,8 @@ const distDir = path.resolve(__dirname, 'dist');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const isProduction = process.env.NODE_ENV === 'production';
 
+const autoprefixer = require('autoprefixer');
+
 // const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // const extractPlugin = new ExtractTextPlugin({
@@ -56,7 +58,8 @@ module.exports = {
           MiniCssExtractPlugin.loader : {
             loader: 'style-loader',
             options: {
-              sourceMap: true
+              sourceMap: true,
+
             }
           },
           {
@@ -78,7 +81,14 @@ module.exports = {
             }
           }
         ]
-      }
+      },
+
+      //autoprefixer postcss
+
+      { 
+        test: /\.css$/, 
+        use: ['style-loader', 'css-loader', 'postcss-loader'] 
+      },
 
     ]
   },
@@ -87,7 +97,6 @@ module.exports = {
     }),
 
     // extractPlugin
-    
 
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output; optional
