@@ -8,6 +8,8 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 const autoprefixer = require('autoprefixer');
 
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 // const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // const extractPlugin = new ExtractTextPlugin({
@@ -102,7 +104,14 @@ module.exports = {
       // Options similar to the same options in webpackOptions.output; optional
       filename: "[name].css",
       chunkFilename: "[id].css"
-    })
+    }),
+
+    new CopyWebpackPlugin([
+      {
+          from: './src/assets',
+          to: 'assets'
+      } 
+  ]),
 
   ]
 };
