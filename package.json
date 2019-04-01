@@ -1,12 +1,11 @@
 {
   "name": "daftacademy-frontend_levelup-spring2019",
   "version": "1.0.0",
-  "description": "Level Up - praca domowa 1",
+  "description": "Level Up - praca domowa 1-2",
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "rm -r -f dist",
-    "build": "webpack --config webpack.config.prod.js",
+    "build": "webpack --config webpack.config.js",
     "start": "webpack-dev-server --open"
   },
   "keywords": [],
@@ -15,13 +14,23 @@
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
+    "autoprefixer": "^9.5.0",
     "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "extract-text-webpack-plugin": "^3.0.2",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.6.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1",
     "webpack-merge": "^4.2.1"
   },
-  "browserslist": "> 0.25%, not dead"
+  "browserslist": "> 0.25%, not dead",
+  "dependencies": {}
 }
