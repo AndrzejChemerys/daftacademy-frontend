@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clock</title>
+    <style>
+        body {
+            background-color: rgb(200, 236, 253);
+            position: relative;
+            height: 90vh;
+        }
+
+        section {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        span {
+            font-size: 5em;
+            color: rgb(72, 25, 124);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <span id="hour"></span>
+        <span id="minute"></span>
+        <span id="seconds"></span>
+    </section>
+
+    <script>
+        const currentDate = new Date();
+        let start = new Date();
+
+        let x = start.getHours();
+        let currentHour = time(x ? x - 12 : x, 13, 1);
+        let currentMin = time(start.getMinutes(), 60);
+        let currentSec = time(start.getSeconds(), 60);
+
+        // let currentHour = currentDate.getHours();
+        // let currentMin = currentDate.getMinutes();
+        // let currentSec = currentDate.getSeconds();
+
+        console.log(currentHour);
+        console.log(currentMin);
+        console.log(currentSec);
+
+        let clock = {
+
+            plusSecond: function (s) {
+                document.getElementById('seconds').innerHTML = (s + "");
+                if (s == 0) this.plusMinute(currentMin.next().value);
+                if (s < 10) {
+                    s = "0" + s;
+                }
+
+
+
+            },
+            plusMinute: function (m) {
+                document.getElementById('minute').innerHTML = (m + ":");
+                if (m == 0) this.addHour(currentHour.next().value);
+
+
+            },
+            plusHour: function (h) {
+                document.getElementById('hour').innerHTML = (h + ":");
+
+            }
+        }
+
+        clock.plusSecond(currentSec.next().value);
+        clock.plusMinute(currentMin.next().value);
+        clock.plusHour(currentHour.next().value);
+
+        setInterval(() => {
+            clock.plusSecond(currentSec.next().value);
+        }, 1000);
+
+        function* time(start, range, reset = 0) {
+            let a = start;
+            while (true) {
+                a = a == range ? reset : a;
+                yield a++;
+            }
+        }
+    </script>
+</body>
+
+</html>
