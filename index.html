@@ -35,17 +35,15 @@
     </section>
 
     <script>
-        const currentDate = new Date();
-        let start = new Date();
-
-        let x = start.getHours();
-        let currentHour = time(x ? x - 12 : x, 13, 1);
-        let currentMin = time(start.getMinutes(), 60);
-        let currentSec = time(start.getSeconds(), 60);
+        let currentDate = new Date();
 
         // let currentHour = currentDate.getHours();
         // let currentMin = currentDate.getMinutes();
         // let currentSec = currentDate.getSeconds();
+
+        let currentHour = time(currentDate.getHours());
+        let currentMin = time(currentDate.getMinutes(), 60);
+        let currentSec = time(currentDate.getSeconds(), 60);
 
         console.log(currentHour);
         console.log(currentMin);
@@ -54,24 +52,28 @@
         let clock = {
 
             plusSecond: function (s) {
-                document.getElementById('seconds').innerHTML = (s + "");
-                if (s == 0) this.plusMinute(currentMin.next().value);
                 if (s < 10) {
                     s = "0" + s;
                 }
-
+                document.getElementById('seconds').innerHTML = (s + "");
+                if (s == 0) this.plusMinute(currentMin.next().value);
 
 
             },
             plusMinute: function (m) {
+                if (m < 10) {
+                    m = "0" + m;
+                }
                 document.getElementById('minute').innerHTML = (m + ":");
-                if (m == 0) this.addHour(currentHour.next().value);
+                if (m == 0) this.plusHour(currentHour.next().value);
 
 
             },
             plusHour: function (h) {
+                if (h < 10) {
+                    h = "0" + h;
+                }
                 document.getElementById('hour').innerHTML = (h + ":");
-
             }
         }
 
@@ -83,8 +85,8 @@
             clock.plusSecond(currentSec.next().value);
         }, 1000);
 
-        function* time(start, range, reset = 0) {
-            let a = start;
+        function* time(currentDate, range, reset = 0) {
+            let a = currentDate;
             while (true) {
                 a = a == range ? reset : a;
                 yield a++;
