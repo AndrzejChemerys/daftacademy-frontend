@@ -57,18 +57,16 @@
                 }
                 document.getElementById('seconds').innerHTML = (s);
                 if (s == 0) this.plusMinute(currentMin.next().value);
-
-
             },
+
             plusMinute: function (m) {
                 if (m < 10) {
                     m = "0" + m;
                 }
                 document.getElementById('minute').innerHTML = (m + ":");
                 if (m == 0) this.plusHour(currentHour.next().value);
-
-
             },
+
             plusHour: function (h) {
                 if (h < 10) {
                     h = "0" + h;
