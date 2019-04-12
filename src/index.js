@@ -1,4 +1,3 @@
-// import script from "./script.js";
-// script();
-
-import './sass/main.scss'
+import './styles/main.scss';
+import script from './scripts/script';
+script();
