@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 const distDir = path.resolve(__dirname, 'dist');
@@ -10,11 +11,7 @@ module.exports = {
     filename: 'main.js',
     path: distDir
   },
-  mode: 'development',
-  devtool: 'eval',
-  devServer: {
-    contentBase: distDir
-  },
+  mode: 'production',
   module: {
     rules: [
       {
@@ -30,12 +27,12 @@ module.exports = {
       {
         test: /\.s(a|c)ss$/,
         use: [
-          { loader: 'style-loader', options: { sourceMap: true } },
+          MiniCssExtractPlugin.loader,
           { loader: 'css-loader', options: { sourceMap: true } },
           { loader: 'postcss-loader', options: { sourceMap: true } },
           { loader: 'sass-loader', options: { sourceMap: true } },
         ]
-      }
+      },
     ]
   },
   plugins: [
@@ -43,6 +40,7 @@ module.exports = {
       filename: 'index.html',
       template: './src/index.html'
     }),
+    new MiniCssExtractPlugin(),
     new CopyPlugin([
       { from: path.resolve(__dirname, 'src/img'), to: path.resolve(distDir, 'img') },
     ])
