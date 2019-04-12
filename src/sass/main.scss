@@ -1,41 +1,16 @@
-@charset 'UTF-8';
+@import '../../node_modules/css-reset-and-normalize/scss/reset-and-normalize';
+@import 'abstracts/variables';
 
-// 1. Configuration and helpers
-@import
-  'abstracts/variables',
-  'abstracts/functions',
-  'abstracts/mixins';
+@import 'base/base';
+@import 'base/typography';
 
-// 2. Vendors
-@import
-  'vendors/normalize';
+@import 'layout/main-container';
+@import 'layout/main-wrapper';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/contact-section';
+@import 'layout/social-section';
 
-// 3. Base stuff
-@import
-  'base/base',
-  'base/fonts',
-  'base/typography',
-  'base/helpers';
-
-// 4. Layout-related sections
-@import
-  'layout/header',
-  'layout/main-section',
-  'layout/footer';
-
-// 5. Components
-@import
-  'components/button';
-
-// 6. Page-specific styles
-@import
-  'pages/home';
-
-// 7. Themes
-@import
-  'themes/default';
-
-
-
-
-
+@import 'components/navigation';
+@import 'components/scrollbar';
+@import 'components/drinks-list';
