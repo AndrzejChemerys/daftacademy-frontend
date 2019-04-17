@@ -31,3 +31,4 @@ https://andriichemerys.github.io/daftacademy-frontend_levelup-spring2019/
 * Zaimplementować przedstawiony layout (HTML + SASS)
 * Zastosować metodologię BEM
 * RWD nie jest wymagane, ale będzie dodatkowo punktowane
+
