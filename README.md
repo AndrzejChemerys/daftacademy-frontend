@@ -1,6 +1,7 @@
-# Front-End Level Up
-## Course from DaftAcademy
-## Spring 2019
+- - -
+### Front-End Level Up
+### Course from DaftAcademy
+#### Spring 2019
 
 - - -
 
@@ -9,6 +10,7 @@ https://andriichemerys.github.io/daftacademy-frontend_levelup-spring2019/
 - - -
 
 **1. Welcome to the jungle** :heavy_check_mark:
+
 **Konfiguracja projektu frontendowego**
 
 * npm do instalacji paczek
@@ -21,6 +23,7 @@ https://andriichemerys.github.io/daftacademy-frontend_levelup-spring2019/
 
 - - -
 **2. Stylowanie bardziej** 
+
 **Preprocesory, frameworki i metodologie w stylowaniu**
 
 **Wdrożyć projekt**
