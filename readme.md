@@ -7,6 +7,7 @@
 
 > Link to the project: 
 
+https://andriichemerys.github.io/daftacademy-frontend_levelup-spring2019-js_promises/
 
 - - -
 
@@ -14,7 +15,7 @@
 
 **Komunikacja z serwerem**
 
-***ZADANIE DOMOWE***
+***Zadanie domowe:***
 
 * Zaimplementuj funkcję promiseAll(), zgodnie z implementacją Promise.all()
 * Zaimplementuj funkcję promiseRace(), zgodnie z implementacją Promise.race()
