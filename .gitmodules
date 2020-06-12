@@ -1,3 +1,21 @@
-[submodule "daftacademy-frontend_levelup-spring2019/daftacademy-frontend_levelup-homework-4a"]
-	path = daftacademy-frontend_levelup-spring2019/daftacademy-frontend_levelup-homework-4a
+[submodule "daftacademy-frontend_levelup-spring2019/daftacademy-frontend_levelup-spring2019-clock"]
+	path = daftacademy-frontend_levelup-spring2019/daftacademy-frontend_levelup-spring2019-clock
+	url = https://github.com/AndriiChemerys/daftacademy-frontend_levelup-spring2019-clock
+[submodule "daftacademy-frontend_levelup-spring2019/daftacademy_frontend4begginers"]
+	path = daftacademy-frontend_levelup-spring2019/daftacademy_frontend4begginers
+	url = https://github.com/AndriiChemerys/daftacademy_frontend4begginers
+[submodule "daftacademy_frontend4begginers"]
+	path = daftacademy_frontend4begginers
+	url = https://github.com/AndriiChemerys/daftacademy_frontend4begginers
+[submodule "daftacademy-frontend_levelup-spring2019/daftacademy-frontend_levelup-spring2019-js_promises"]
+	path = daftacademy-frontend_levelup-spring2019/daftacademy-frontend_levelup-spring2019-js_promises
 	url = https://github.com/AndriiChemerys/daftacademy-frontend_levelup-spring2019-js_promises
+[submodule "daftacademy-frontend_levelup-spring2019/daftacademy-frontend_levelup-spring2019-unit_testing"]
+	path = daftacademy-frontend_levelup-spring2019/daftacademy-frontend_levelup-spring2019-unit_testing
+	url = https://github.com/AndriiChemerys/daftacademy-frontend_levelup-spring2019-unit_testing
+[submodule "daftacademy-frontend_levelup-spring2019/daftcode_intership2019_test"]
+	path = daftacademy-frontend_levelup-spring2019/daftcode_intership2019_test
+	url = https://github.com/AndriiChemerys/daftcode_intership2019_test
+[submodule "daftacademy-frontend_levelup-spring2020"]
+	path = daftacademy-frontend_levelup-spring2020
+	url = https://github.com/AndriiChemerys/daftacademy-frontend_levelup-spring2020
