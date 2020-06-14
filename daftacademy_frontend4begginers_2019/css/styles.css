@@ -1,0 +1,612 @@
+/* ======================
+Styles for 6BM Website.
+Author: Andrii Chemerys.
+Warsaw, 9.12.2018. 
+====================== */
+
+/* ======================
+MAIN STYLES
+====================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2c0d32;
+    background: url(../img/background.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.screen-reader-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* ======================
+TYPOGRAPHY
+====================== */
+
+body {
+    color: rgba(204, 200, 255, 0.8);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+a {
+    color: #EF008E;
+    text-decoration: none;
+}
+
+/* ======================
+BUTTONS
+====================== */
+
+.button {
+    padding: 7px 15px;
+    border-radius: 3px;
+    background-color: rgba(204, 200, 255, 0.1);
+    border-color: rgba(204, 200, 255, 0.1);
+
+    color: rgba(204, 200, 255, 0.8);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+/* animation */
+
+.button:hover {
+    background-color: rgba(204, 200, 255, 0.2);
+    color: rgba(204, 200, 255, 1);
+}
+
+.button:active {
+    background-color: rgba(204, 200, 255, 0.2);
+    color: rgba(204, 200, 255, 1);
+}
+
+.button:visited {
+    background-color: rgba(204, 200, 255, 0.1);
+    color: rgba(204, 200, 255, 0.5);
+}
+
+.button:focus {
+    background-color: rgba(204, 200, 255, 0.2);
+    color: rgba(204, 200, 255, 1);
+    border-color: rgba(204, 200, 255, 0.8);
+    outline: none;
+}
+
+.button:disabled {
+    background-color: rgba(204, 200, 255, 0.1);
+    color: rgba(204, 200, 255, 0.5);
+}
+
+/* ======================
+FORMS
+====================== */
+
+.form__field {
+    margin-bottom: 10px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.form__input {
+    display: block;
+    height: 35px;
+    width: 300px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(219, 216, 251, 0.1);
+}
+
+/* ======================
+MAIN PAGE LAYOUT
+====================== */
+
+.page-header {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+}
+
+.page-content {
+    margin-left: 220px;
+    padding: 0 10%;
+}
+
+/* ======================
+NAVIGATION
+====================== */
+
+.page-navigation__items {
+    padding-top: 15px;
+}
+
+.page-navitagion__item a {
+    color: rgba(239, 0, 142, 0.8);
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 6.7px;
+    transition: all 0.1s ease-in-out;
+}
+
+/* animation */
+
+.page-navitagion__item a:hover {
+    color: rgba(239, 0, 142, 1);
+}
+
+.page-navitagion__item a:focus {
+    color: rgba(239, 0, 142, 1);
+    outline: none;
+}
+
+.page-navitagion__item a:active {
+    color: rgba(239, 0, 142, 1);
+    letter-spacing: 6.5px;
+}
+
+.page-navitagion__item a:visited {
+    color: rgba(239, 0, 142, 0.6);
+}
+
+.page-navitagion__item a:disabled {
+    color: rgba(239, 0, 142, 0.4);
+}
+
+
+/* ======================
+LINKS FOR SOCIAL MEDIA
+====================== */
+
+.social-links__item+.social-links__item {
+    margin-top: 15px;
+}
+
+.social-links__item img {
+    width: 20px;
+    height: 20px;
+}
+
+/* animation */
+
+.social-links__item a {
+    opacity: 0.8;
+    transition: all 0.1s ease-in-out;
+}
+
+.social-links__item a:hover {
+    opacity: 1;
+}
+
+.social-links__item a:active {
+    opacity: 1;
+}
+
+.social-links__item a:visited {
+    opacity: 0.6;
+}
+
+.social-links__item a:focus {
+    opacity: 1;
+    outline: none;
+}
+
+.social-links__item a:disabled {
+    opacity: 0.4;
+}
+
+/* ================================
+COMMON STYLES FOR ALL SECTIONS
+================================ */
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100vh;
+}
+
+.content-section__header {
+    margin-bottom: 60px;
+    color: #EF008E;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+}
+
+.content-section__body {
+    flex-grow: 1;
+}
+
+/* ======================
+SECTION "HOME"
+====================== */
+
+.content-section.home-section {
+    align-items: center;
+}
+
+.band-members {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 375px;
+}
+
+.band-members__name,
+.band-members__desc {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.band-members__name {
+    color: #ccc8ff;
+    font-size: 15px;
+    letter-spacing: 3.8px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.band-members__desc {
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    font-weight: normal;
+}
+
+.band-members__item img {
+    width: 100%;
+    opacity: .55;
+}
+
+/* animation */
+
+.band-members__item:hover > .band-members__name {
+    opacity: 1;
+}
+
+.band-members__item:hover > .band-members__desc {
+    opacity: 1;
+}
+
+.band-members__item:hover > .band-members__image {
+    opacity: 1;
+}
+
+/* ======================
+SECTION "ABOUT"
+====================== */
+
+.about {
+    position: relative;
+    margin-left: 290px;
+    margin-bottom: 115px;
+}
+
+.about__image {
+    max-width: 100%;
+    border-top: 3px solid #EF008E;
+    min-width: 375px;
+}
+
+.about__desc-header {
+    margin-bottom: 30px;
+    color: #CCC8FF;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about__desc {
+    position: absolute;
+    left: -290px;
+    bottom: -115px;
+    width: 380px;
+    padding: 30px;
+    background-color: #25072e;
+    border-bottom: 3px solid #EF008E;
+}
+
+/* ======================
+SECTION "CONCERTS"
+====================== */
+
+.concerts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.concerts__item {
+    flex-basis: 50%;
+    padding: 0 0 40px 40px;
+}
+
+.concerts__image {
+    max-width: 100%;
+    border-bottom: 3px solid #EF008E;
+}
+
+.concerts__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.concerts__info-base {
+    flex-grow: 1;
+}
+
+.concerts__date {
+    margin: 0;
+    color: #CCC8FF;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3.8px;
+}
+
+.concerts__location {
+    margin: 0;
+    letter-spacing: 3.8px;
+}
+
+/* ======================
+SECTION "VIDEO"
+====================== */
+
+.embedded-video {
+    border-top: 3px solid #EF008E;
+}
+
+/* ======================
+SECTION "PHOTOS"
+====================== */
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.gallery__item {
+    flex-basis: 33.3%;
+    padding: 0 0 20px 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.gallery__image {
+    max-width: 100%;
+    border-top: 3px solid #EF008E;
+    min-width: 130px;
+}
+
+/* animation */
+
+.gallery__item:hover {
+    transform: scale(1.075);
+}
+
+/* ======================
+SECTION "CONTACT"
+====================== */
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact__image img {
+    max-width: 100%;
+}
+
+.contact__address {
+    padding: 70px;
+    font-style: normal;
+}
+
+.contact__form {
+    flex-basis: 50%;
+    padding-top: 40px;
+}
+
+.contact__form .button {
+    margin-top: 20px;
+}
+
+/* ======================
+=========================
+MEDIA QUERIES
+=========================
+====================== */
+
+/* ======================
+Video breakdown point
+====================== */
+
+@media (max-width: 1366px) {
+    .video-container iframe {
+        width: 100%;
+    }
+}
+
+/* ======================
+Laptop
+====================== */
+
+@media (max-width: 1024px) {
+    .about__desc {
+        position: static;
+        width: 375px;
+        margin-top: 10px;
+    }
+
+    .concerts {
+        display: block;
+        width: 100%;
+    }
+
+    .concerts__info {
+        padding: 10px 0  10px 0;
+    }
+
+    .concerts__item {
+        padding: 0;
+    }
+
+    .contact__address {
+        padding: 20px 150px 20px 0;
+    }
+
+    .contact__form {
+        padding-top: 0;
+    }
+}
+
+/* ======================
+Tablet
+====================== */
+
+@media (max-width: 768px) {
+
+    .page-content {
+        margin: auto;
+    }
+
+    .content-section {
+        align-items: center;
+    }
+
+    .page-header {
+        position: static;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .band-members {
+        flex-direction: column;
+    }
+
+    .band-members__image {
+        margin: 50px 0 10px;
+    }
+
+    .band-members__name,
+    .band-members__desc {
+        display: block;
+        text-align: center;
+        opacity: 1;
+    }
+
+    .about {
+        margin-left: 0;
+    }
+
+    .about__desc {
+        margin: auto;
+    }
+
+    .concerts__item {
+        padding: 0;
+    }
+
+    .gallery__item {
+        min-width: 300px;
+    }
+
+    .page-footer {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+}
+
+/* ======================
+Mobile phone
+====================== */
+
+@media (max-width: 375px) {
+    .body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-content {
+        padding: 0 2%;
+    }
+
+    .concerts {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .concerts__item {
+        margin-bottom: 15px;
+    }
+
+    .concerts__image {
+        padding: 0;
+    }
+
+    .gallery__item {
+        padding: 0 0 20px 0;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 375px;
+    }
+}
